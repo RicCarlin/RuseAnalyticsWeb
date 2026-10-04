@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TALIA — Threat Actor Lineage &amp; Intrusion Analysis | Ruse Analytics</title>
   <meta name="description" content="TALIA (Threat Actor Lineage &amp; Intrusion Analysis) reads your Change Auditor audit trail to reconstruct intrusions, score compromise risk, map blast radius and plan Active Directory recovery.">
-  <link rel="icon" href="images/mark.png">
+  <link rel="icon" type="image/svg+xml" href="images/talia-mark.svg">
+  <link rel="alternate icon" href="images/mark.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
@@ -30,29 +31,20 @@
     <section class="hero" id="top">
       <div class="wrap split">
        <div>
-        <p class="eyebrow">TALIA · Threat Actor Lineage &amp; Intrusion Analysis</p>
+        <div class="talia" role="img" aria-label="TALIA: Threat Actor Lineage and Intrusion Analysis">
+          <img src="images/talia-mark-reverse.svg" alt="" width="34" height="27">
+          <div><b>TALIA</b><span>Threat Actor Lineage &amp; Intrusion Analysis</span></div>
+        </div>
         <h1>Know what happened<br>in your Active Directory.</h1>
-        <p class="lead">Ruse Analytics reads your Change Auditor audit trail and shows how an intruder got in, what they touched, how far they could reach, and exactly what to undo.</p>
+        <p class="lead"><strong>TALIA</strong>, from Ruse Analytics, reads your Change Auditor audit trail and shows how an intruder got in, what they touched, how far they could reach, and exactly what to undo.</p>
         <div class="actions">
           <a class="btn primary" href="#contact">Request a demo</a>
           <a class="btn ghost" href="#capabilities">See what it does</a>
         </div>
        </div>
-       <figure class="figure">
-        <svg viewBox="0 0 420 420" role="img" aria-label="Illustration: accounts arranged in rings by distance from domain control">
-          <circle class="ring dash" cx="210" cy="210" r="195"/><circle class="ring" cx="210" cy="210" r="145"/><circle class="ring" cx="210" cy="210" r="95"/>
-          <circle class="core" cx="210" cy="210" r="48"/>
-          <text class="svgtxt" x="210" y="206" text-anchor="middle" style="fill:#fff">TIER-0</text><text class="svgtxt" x="210" y="219" text-anchor="middle" style="fill:#fff">Domain Admins</text>
-          <path class="lk" d="M210 72 L210 108"/><path class="lk" d="M210 122 L210 162"/><path class="lk" d="M303 164 L252 190"/><path class="lk" d="M122 246 L168 230"/>
-          <path class="lk" d="M349 152 L317 159"/><path class="lk" d="M76 285 L108 254"/>
-          <path class="lk cut" d="M296 304 L248 250"/><text class="svgtxt" x="268" y="332" style="fill:#ff4d5e">cut here</text>
-          <circle class="nd" cx="210" cy="115" r="7"/><circle class="nd" cx="310" cy="160" r="7"/><circle class="nd" cx="115" cy="250" r="7"/>
-          <circle class="nd sus" cx="210" cy="65" r="8"/><circle class="pulse" cx="210" cy="65" r="8"/>
-          <circle class="nd" cx="355" cy="150" r="6"/><circle class="nd" cx="70" cy="290" r="6"/>
-          <circle class="nd add" cx="300" cy="310" r="8"/><circle class="nd" cx="95" cy="120" r="5"/><circle class="nd" cx="345" cy="260" r="5"/><circle class="nd" cx="150" cy="370" r="5"/>
-          <text class="svgtxt" x="224" y="62">suspect</text>
-        </svg>
-        <figcaption>Illustrative: accounts placed by steps from domain control</figcaption>
+       <figure class="figure shot">
+        <img src="images/talia-blast-radius.jpg" width="698" height="488" alt="TALIA blast radius view: accounts placed in rings by steps from domain control, with the changes that cut each route marked">
+        <figcaption>TALIA blast radius, on synthetic test data</figcaption>
        </figure>
       </div>
     </section>
@@ -100,17 +92,8 @@
             <ul><li>One lane per stage, coloured by the account responsible</li><li>Idle gaps compressed so the story stays readable</li><li>A "footholds left behind" list of what to undo</li></ul>
           </div>
           <div class="panel reveal">
-            <svg viewBox="0 0 720 290" role="img" aria-label="Illustrative intrusion chain with five kill-chain lanes">
-              <g class="lanetxt"><text x="8" y="56">Initial access</text><text x="8" y="110">Credential access</text><text x="8" y="164">Persistence</text><text x="8" y="218">Priv. escalation</text><text x="8" y="272">Impact</text></g>
-              <g><line class="lane" x1="120" x2="710" y1="52" y2="52"/><line class="lane" x1="120" x2="710" y1="106" y2="106"/><line class="lane" x1="120" x2="710" y1="160" y2="160"/><line class="lane" x1="120" x2="710" y1="214" y2="214"/><line class="lane" x1="120" x2="710" y1="268" y2="268"/></g>
-              <path class="seq" d="M160 52 L270 106 L360 160"/><path class="seq" d="M430 214 L560 268"/>
-              <path class="hand" d="M360 160 L430 214"/>
-              <circle class="ev a" cx="160" cy="52" r="8"/><circle class="ev a" cx="270" cy="106" r="8"/><circle class="ev a" cx="360" cy="160" r="8"/>
-              <circle class="ev r" cx="430" cy="214" r="8"/><circle class="ev r" cx="560" cy="268" r="8"/>
-              <text class="evtxt" x="172" y="44">Spray logon</text><text class="evtxt" x="282" y="98">Password reset</text><text class="evtxt" x="372" y="152">New account</text>
-              <text class="evtxt" x="442" y="206">Added to Domain Admins</text><text class="evtxt" x="572" y="262">GPO modified</text>
-            </svg>
-            <p class="cap">Illustrative example</p>
+            <img src="images/talia-intrusion-chain.jpg" width="684" height="488" loading="lazy" alt="TALIA intrusion chain: events by kill-chain stage, starting from the entry account">
+            <p class="cap">TALIA intrusion chain, on synthetic test data</p>
           </div>
         </div>
       </div>
@@ -168,13 +151,8 @@
           <li><strong>Tunable</strong> Baseline and incident windows, prior, business hours and spray thresholds are all adjustable.</li>
         </ul>
         <div class="panel reveal" style="grid-column:1/-1">
-          <div class="bars">
-            <div class="bar-row"><span>svc_deploy</span><div class="track"><i style="width:91%"></i><u style="left:82%;width:15%"></u></div><em>91%</em></div>
-            <div class="bar-row"><span>adm_jsmith</span><div class="track"><i style="width:64%"></i><u style="left:45%;width:36%"></u></div><em>64%</em></div>
-            <div class="bar-row"><span>helpdesk02</span><div class="track"><i style="width:28%"></i><u style="left:12%;width:30%"></u></div><em>28%</em></div>
-            <div class="bar-row"><span>mwhite</span><div class="track"><i style="width:6%"></i><u style="left:2%;width:9%"></u></div><em>6%</em></div>
-          </div>
-          <p class="cap">Illustrative: P(compromised) per account, with 5th to 95th percentile range</p>
+          <img src="images/talia-risk-model.jpg" width="682" height="411" loading="lazy" alt="TALIA risk model: accounts ranked by probability of compromise, with 90 percent intervals and Tier-0 exposure">
+          <p class="cap">TALIA risk model, on synthetic test data (fictional CONTOSO domain)</p>
         </div>
       </div>
     </section>

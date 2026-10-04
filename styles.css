@@ -107,3 +107,17 @@ code{background:rgba(11,42,68,.08);padding:.05rem .3rem;border-radius:.25rem;fon
 @media(prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}.pulse{animation:none}.card{transition:none}}
 
 @media(max-width:40rem){nav a:not(.cta){display:none}.site-header{position:static}}
+
+.talia{display:inline-flex;align-items:center;gap:.75rem;margin:0 0 1.4rem;padding:.4rem 1rem .4rem .6rem;border:1px solid rgba(168,237,230,.3);border-radius:999px;background:rgba(255,255,255,.05)}
+.talia img{height:1.7rem;width:auto;flex:none}
+.talia div{display:flex;align-items:center;flex-wrap:wrap;gap:.2rem .75rem}
+.talia b{font-size:1rem;line-height:1;letter-spacing:.16em;font-weight:700}
+.talia span{padding-left:.75rem;border-left:1px solid rgba(168,237,230,.35);font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mint);font-weight:600;line-height:1.3}
+@media(max-width:34rem){.talia{border-radius:1rem}.talia span{padding-left:0;border-left:0;letter-spacing:.12em}}
+
+/* real screenshots */
+.shot img,.panel img{display:block;width:100%;height:auto;border-radius:.5rem}
+.shot img{border:1px solid rgba(168,237,230,.25);box-shadow:0 24px 60px -24px rgba(0,0,0,.6)}
+.panel .cap{margin-top:.6rem}
+.panel{max-width:46rem}
+#risk-model .panel{max-width:none;margin-top:1rem}
