@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ruse Analytics — From Noise to Intelligence</title>
-  <meta name="description" content="Ruse Analytics turns complex data into actionable threat intelligence for a more secure world.">
+  <title>Ruse Analytics — AD Forensic Investigator</title>
+  <meta name="description" content="AD Forensic Investigator reads your Change Auditor audit trail to reconstruct intrusions, score compromise risk, map blast radius and plan Active Directory recovery.">
   <link rel="icon" href="images/mark.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +18,9 @@
       <a href="#top" aria-label="Ruse Analytics home"><img class="logo" src="images/logo-reverse.png" alt="Ruse Analytics" width="185" height="62"></a>
       <nav aria-label="Main">
         <a href="#capabilities">Capabilities</a>
-        <a href="#approach">Approach</a>
-        <a href="#about">About</a>
+        <a href="#risk-model">Risk model</a>
+        <a href="#how">How it works</a>
+        <a href="#trust">Security</a>
         <a class="cta" href="#contact">Contact us</a>
       </nav>
     </div>
@@ -27,71 +28,189 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="wrap">
-        <p class="eyebrow">Threat intelligence</p>
-        <h1>From Noise<br>to Intelligence.</h1>
-        <p class="lead">Ruse Analytics turns complex data into actionable threat intelligence — for a more secure world.</p>
+      <div class="wrap split">
+       <div>
+        <p class="eyebrow">AD Forensic Investigator</p>
+        <h1>Know what happened<br>in your Active Directory.</h1>
+        <p class="lead">Ruse Analytics reads your Change Auditor audit trail and shows how an intruder got in, what they touched, how far they could reach, and exactly what to undo.</p>
         <div class="actions">
-          <a class="btn primary" href="#contact">Talk to our team</a>
-          <a class="btn ghost" href="#capabilities">Our capabilities</a>
+          <a class="btn primary" href="#contact">Request a demo</a>
+          <a class="btn ghost" href="#capabilities">See what it does</a>
         </div>
+       </div>
+       <figure class="figure">
+        <svg viewBox="0 0 420 420" role="img" aria-label="Illustration: accounts arranged in rings by distance from domain control">
+          <circle class="ring dash" cx="210" cy="210" r="195"/><circle class="ring" cx="210" cy="210" r="145"/><circle class="ring" cx="210" cy="210" r="95"/>
+          <circle class="core" cx="210" cy="210" r="48"/>
+          <text class="svgtxt" x="210" y="206" text-anchor="middle" style="fill:#fff">TIER-0</text><text class="svgtxt" x="210" y="219" text-anchor="middle" style="fill:#fff">Domain Admins</text>
+          <path class="lk" d="M210 72 L210 108"/><path class="lk" d="M210 122 L210 162"/><path class="lk" d="M303 164 L252 190"/><path class="lk" d="M122 246 L168 230"/>
+          <path class="lk" d="M349 152 L317 159"/><path class="lk" d="M76 285 L108 254"/>
+          <path class="lk cut" d="M296 304 L248 250"/><text class="svgtxt" x="268" y="332" style="fill:#ff4d5e">cut here</text>
+          <circle class="nd" cx="210" cy="115" r="7"/><circle class="nd" cx="310" cy="160" r="7"/><circle class="nd" cx="115" cy="250" r="7"/>
+          <circle class="nd sus" cx="210" cy="65" r="8"/><circle class="pulse" cx="210" cy="65" r="8"/>
+          <circle class="nd" cx="355" cy="150" r="6"/><circle class="nd" cx="70" cy="290" r="6"/>
+          <circle class="nd add" cx="300" cy="310" r="8"/><circle class="nd" cx="95" cy="120" r="5"/><circle class="nd" cx="345" cy="260" r="5"/><circle class="nd" cx="150" cy="370" r="5"/>
+          <text class="svgtxt" x="224" y="62">suspect</text>
+        </svg>
+        <figcaption>Illustrative: accounts placed by steps from domain control</figcaption>
+       </figure>
       </div>
     </section>
 
-    <section class="band" aria-label="Our promise">
-      <div class="wrap pillars">
-        <div><strong>Collect</strong><span>Signals from across your environment and beyond</span></div>
-        <div><strong>Analyse</strong><span>Separate real threats from background noise</span></div>
-        <div><strong>Prioritise</strong><span>Focus on what matters to your organisation</span></div>
-        <div><strong>Act</strong><span>Clear, actionable intelligence</span></div>
+    <section class="band" aria-label="Incident lifecycle">
+      <div class="wrap pillars five">
+        <div><strong>Identify</strong><span>Risk model, Tier-0 exposure, baselines</span></div>
+        <div><strong>Detect</strong><span>Live threats, MITRE ATT&amp;CK, ransomware match</span></div>
+        <div><strong>Respond</strong><span>Account triage, remediation, IR report</span></div>
+        <div><strong>Recover</strong><span>Recovery plan, replay, KRBTGT reset</span></div>
+        <div><strong>Govern</strong><span>Cases and tamper-evident custody</span></div>
       </div>
     </section>
 
-    <section id="capabilities" class="section">
+    <section class="proof" aria-label="At a glance">
       <div class="wrap">
-        <h2>What we do</h2>
-        <p class="sub">Intelligence that helps security teams decide faster and with confidence.</p>
-        <div class="cards">
-          <article class="card"><h3>Threat intelligence</h3><p>Curated, contextualised intelligence on the threats, actors and techniques relevant to you.</p></article>
-          <article class="card"><h3>Threat analytics</h3><p>Advanced analysis that surfaces patterns and anomalies hidden in large, complex data sets.</p></article>
-          <article class="card"><h3>Exposure monitoring</h3><p>Continuous visibility of risks to your people, systems and brand, so you can act before they escalate.</p></article>
-          <article class="card"><h3>Reporting &amp; dashboards</h3><p>Clear, board-ready reporting that turns technical findings into decisions.</p></article>
-          <article class="card"><h3>Integration</h3><p>Bring intelligence into the tools and workflows your security team already uses.</p></article>
-          <article class="card"><h3>Advisory</h3><p>Expert guidance to build a threat-informed security strategy.</p></article>
-        </div>
+        <div><b>9</b><span>built-in detections mapped to MITRE ATT&amp;CK</span></div>
+        <div><b>Read-only</b><span>access to your Change Auditor database</span></div>
+        <div><b>No agents</b><span>to deploy on domain controllers</span></div>
+        <div><b>Reproducible</b><span>every risk run can be re-derived</span></div>
       </div>
     </section>
 
-    <section id="approach" class="section alt">
-      <div class="wrap">
-        <h2>How we work</h2>
-        <ol class="steps">
-          <li><h3>Understand</h3><p>We start with your environment, risks and priorities.</p></li>
-          <li><h3>Analyse</h3><p>We cut through the noise to find the signals that matter.</p></li>
-          <li><h3>Deliver</h3><p>You receive intelligence that is clear, timely and actionable.</p></li>
-          <li><h3>Improve</h3><p>We refine continuously as the threat landscape changes.</p></li>
-        </ol>
-      </div>
-    </section>
-
-    <section id="about" class="section">
+    <section id="problem" class="section">
       <div class="wrap about">
         <div>
-          <h2>About Ruse Analytics</h2>
-          <p>Security teams are surrounded by data but short of clarity. Ruse Analytics exists to change that: we turn complex data into actionable threat intelligence, so organisations can anticipate threats rather than react to them.</p>
+          <h2>The audit trail has the answer. Reading it takes days.</h2>
+          <p>After a suspected breach, the evidence is already in Change Auditor: group changes, new accounts, GPO edits, rights grants, logons. It is millions of rows. Finding the intruder's path, and knowing which changes to roll back and which to keep, is slow manual work done under pressure.</p>
+          <p>AD Forensic Investigator does that work against your own data and shows its working, so an analyst can check every conclusion.</p>
         </div>
         <ul class="values">
-          <li><strong>Clarity</strong> Signal over noise, always.</li>
-          <li><strong>Rigour</strong> Evidence-based, repeatable analysis.</li>
-          <li><strong>Trust</strong> Careful, responsible handling of your data.</li>
+          <li><strong>Scope</strong> Active Directory and identity activity recorded by Quest Change Auditor.</li>
+          <li><strong>Output</strong> Findings an analyst can verify against the source events.</li>
+          <li><strong>Built for</strong> Incident response engagements and ongoing identity-threat monitoring.</li>
         </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="showcase">
+          <div>
+            <h2>See the whole attack as a storyline</h2>
+            <p>The intrusion chain lays every sensitive change out by kill-chain stage, in time order. Dashed hand-offs show an account being reset, created or elevated, and then acting.</p>
+            <ul><li>One lane per stage, coloured by the account responsible</li><li>Idle gaps compressed so the story stays readable</li><li>A "footholds left behind" list of what to undo</li></ul>
+          </div>
+          <div class="panel reveal">
+            <svg viewBox="0 0 720 290" role="img" aria-label="Illustrative intrusion chain with five kill-chain lanes">
+              <g class="lanetxt"><text x="8" y="56">Initial access</text><text x="8" y="110">Credential access</text><text x="8" y="164">Persistence</text><text x="8" y="218">Priv. escalation</text><text x="8" y="272">Impact</text></g>
+              <g><line class="lane" x1="120" x2="710" y1="52" y2="52"/><line class="lane" x1="120" x2="710" y1="106" y2="106"/><line class="lane" x1="120" x2="710" y1="160" y2="160"/><line class="lane" x1="120" x2="710" y1="214" y2="214"/><line class="lane" x1="120" x2="710" y1="268" y2="268"/></g>
+              <path class="seq" d="M160 52 L270 106 L360 160"/><path class="seq" d="M430 214 L560 268"/>
+              <path class="hand" d="M360 160 L430 214"/>
+              <circle class="ev a" cx="160" cy="52" r="8"/><circle class="ev a" cx="270" cy="106" r="8"/><circle class="ev a" cx="360" cy="160" r="8"/>
+              <circle class="ev r" cx="430" cy="214" r="8"/><circle class="ev r" cx="560" cy="268" r="8"/>
+              <text class="evtxt" x="172" y="44">Spray logon</text><text class="evtxt" x="282" y="98">Password reset</text><text class="evtxt" x="372" y="152">New account</text>
+              <text class="evtxt" x="442" y="206">Added to Domain Admins</text><text class="evtxt" x="572" y="262">GPO modified</text>
+            </svg>
+            <p class="cap">Illustrative example</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities" class="section alt">
+      <div class="wrap">
+        <h2>What it does</h2>
+        <p class="sub">Organised around the incident lifecycle (NIST CSF functions) and the Identity Threat Detection &amp; Response workflow.</p>
+        <div class="cards">
+          <article class="card"><h3>Intrusion chain</h3><p>The whole attack as a storyline, one lane per kill-chain stage. Every sensitive change by a suspect account, or made to it, is a node. Hand-offs show an account being reset, created or elevated and then acting. A "footholds left behind" list says what to undo.</p></article>
+          <article class="card"><h3>Probabilistic risk model</h3><p>Learns each account's normal behaviour from your own history, then scores how unlikely recent activity is. Gives P(compromised) per account and P(domain compromise) for the environment, with confidence ranges.</p></article>
+          <article class="card"><h3>Blast radius</h3><p>An onion view of how many steps each account is from domain control, with Tier-0 groups and rights at the core. Shows the routes in and the single change that cuts them. Exports to CSV and printable PDF.</p></article>
+          <article class="card"><h3>Identity exposure</h3><p>Who holds privileged membership today and over time, which rights grants exist (including DCSync), and an impact map and attack graph of what a compromised account can reach.</p></article>
+          <article class="card"><h3>Live threats</h3><p>A monitoring dashboard with an alert queue and scheduled re-scoring, and a warning if Change Auditor stops delivering events.</p></article>
+          <article class="card"><h3>Baseline analysis</h3><p>Compares the incident window with normal and gives each change a verdict: roll back, review or routine. Also flags first-ever activity, such as change types never seen in the baseline.</p></article>
+          <article class="card"><h3>Detections mapped to ATT&amp;CK</h3><p>Privileged group changes, new accounts, GPO modifications, DCSync rights, off-hours admin activity, KRBTGT resets, new services and scheduled tasks, and password spray. Each is tagged to a MITRE technique and viewable in a Navigator layer.</p></article>
+          <article class="card"><h3>Ransomware match</h3><p>Compares observed behaviour with known ransomware group tradecraft to suggest which family you may be dealing with.</p></article>
+          <article class="card"><h3>Evidence check</h3><p>Compares every claim in an AI narrative with the data it was given, so unsupported statements are caught before they reach a report.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="recovery" class="section">
+      <div class="wrap">
+        <h2>Respond and recover</h2>
+        <p class="sub">From "what happened" to an ordered plan to put the directory right.</p>
+        <div class="cards">
+          <article class="card"><h3>Account triage &amp; remediation board</h3><p>Rank accounts by risk, decide what to do with each, and track actions to completion with owners and due dates.</p></article>
+          <article class="card"><h3>Recovery planning</h3><p>Works out the clean boundary relative to your backup point and what has to be rebuilt.</p></article>
+          <article class="card"><h3>Mode A: replay</h3><p>Restore a backup, then replay the legitimate changes made since, in dependency order. Suspect changes are skipped and uncertain ones go to manual review.</p></article>
+          <article class="card"><h3>Mode B: DIT surgery</h3><p>Offline NTDS.dit repair plans: attribute restores, object deletions, and membership and link removals, in removal order.</p></article>
+          <article class="card"><h3>KRBTGT reset wizard</h3><p>A guided double reset of the krbtgt account.</p></article>
+          <article class="card"><h3>IR report</h3><p>A written incident report generated from the case, ready for the client or the board.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="risk-model" class="section alt">
+      <div class="wrap about">
+        <div>
+          <h2>A risk model you can re-derive</h2>
+          <p>The model does not guess from a black box. It counts activity per account and signal in a baseline window and an incident window, then:</p>
+          <ol class="plain">
+            <li>Learns each account's normal rate from this environment's own history (Gamma-Poisson with a pooled empirical-Bayes prior).</li>
+            <li>Scores how unlikely the incident-window activity is against that baseline.</li>
+            <li>Rolls signals up into kill-chain stages, discounting stages that normally occur together here.</li>
+            <li>Runs a seeded Monte Carlo to give each account's P(compromised) and the environment's P(domain compromise), as a mean with 5th to 95th percentile.</li>
+          </ol>
+          <p>Authentication events add password-spray detection: a successful logon from a host that sprayed many accounts, on or after the spray day. Risk can also flow between linked accounts.</p>
+        </div>
+        <ul class="values">
+          <li><strong>Reproducible</strong> The same inputs give the same seed and the same numbers, so a report can be re-derived.</li>
+          <li><strong>Tamper-evident</strong> Each saved run is stored with a SHA-256 in the case's chain of custody.</li>
+          <li><strong>Tunable</strong> Baseline and incident windows, prior, business hours and spray thresholds are all adjustable.</li>
+        </ul>
+        <div class="panel reveal" style="grid-column:1/-1">
+          <div class="bars">
+            <div class="bar-row"><span>svc_deploy</span><div class="track"><i style="width:91%"></i><u style="left:82%;width:15%"></u></div><em>91%</em></div>
+            <div class="bar-row"><span>adm_jsmith</span><div class="track"><i style="width:64%"></i><u style="left:45%;width:36%"></u></div><em>64%</em></div>
+            <div class="bar-row"><span>helpdesk02</span><div class="track"><i style="width:28%"></i><u style="left:12%;width:30%"></u></div><em>28%</em></div>
+            <div class="bar-row"><span>mwhite</span><div class="track"><i style="width:6%"></i><u style="left:2%;width:9%"></u></div><em>6%</em></div>
+          </div>
+          <p class="cap">Illustrative: P(compromised) per account, with 5th to 95th percentile range</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="wrap">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><h3>Connect</h3><p>Point it at the Change Auditor SQL Server database, read-only. No agents on domain controllers.</p></li>
+          <li><h3>Collect</h3><p>Run the detection queries, or upload exported CSVs. Results are kept with the case.</p></li>
+          <li><h3>Analyse</h3><p>The risk model scores accounts. AI builds the narrative, or a rule-based fallback does when no model is available.</p></li>
+          <li><h3>Act</h3><p>Triage accounts, follow the recovery plan and export the IR report, with every step recorded.</p></li>
+        </ol>
+        <p class="sub note">Deployed as a web portal with a REST API (JSON and CSV export, Docker supported), with local sign-in or Microsoft Entra ID single sign-on.</p>
+      </div>
+    </section>
+
+    <section id="trust" class="section alt">
+      <div class="wrap">
+        <h2>Built for evidence and for your network</h2>
+        <p class="sub">Controls that matter when the output may end up in front of a client, a regulator or a court.</p>
+        <div class="cards">
+          <article class="card"><h3>Read-only source access</h3><p>Needs only <code>db_datareader</code> on the Change Auditor database. It never writes to your audit data.</p></article>
+          <article class="card"><h3>Chain of custody</h3><p>An append-only, hash-chained custody log. Each entry folds in the previous hash, and one call verifies the chain and reports the first broken link. Actor identity comes from the signed-in session, never the request.</p></article>
+          <article class="card"><h3>Your choice of AI, including none</h3><p>Use Claude or Gemini, a local model such as LM Studio or Ollama so data stays on your network, or switch AI off and use the rule-based fallback.</p></article>
+          <article class="card"><h3>Cases and access control</h3><p>Cases hold evidence, analyses, notes, remediation and custody. Sign in locally or with Entra ID (OIDC with PKCE; tokens stay on the server).</p></article>
+          <article class="card"><h3>Feature controls</h3><p>Administrators can turn features off or restrict them to admins, including high-impact recovery tools such as DIT surgery and the KRBTGT wizard.</p></article>
+          <article class="card"><h3>Usage and cost visibility</h3><p>A report of AI token use and spend, so costs are never a surprise.</p></article>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="section contact">
       <div class="wrap narrow">
-        <h2>Let's talk</h2>
-        <p class="sub">Tell us about your challenges and we'll be in touch.</p>
+        <h2>See it on your data</h2>
+        <p class="sub">Tell us about your environment and we'll arrange a walkthrough.</p>
         <form action="mailto:hello@ruseanalytics.com" method="post" enctype="text/plain">
           <label>Name <input name="name" required autocomplete="name"></label>
           <label>Email <input type="email" name="email" required autocomplete="email"></label>
@@ -106,9 +225,18 @@
   <footer class="site-footer">
     <div class="wrap foot">
       <span>&copy; <span id="year">2026</span> Ruse Analytics. All rights reserved.</span>
-      <span>Threat Intelligence for a More Secure World</span>
+      <span>AD Forensic Investigator · Identity threat detection &amp; response</span>
     </div>
   </footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script>
+  (function(){
+    if(!("IntersectionObserver" in window)) return;
+    document.documentElement.classList.add("js");
+    var els=[].slice.call(document.querySelectorAll(".card,.steps li,.values li,.panel"));
+    els.forEach(function(e){e.classList.add("reveal")});
+    var io=new IntersectionObserver(function(a){a.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12});
+    els.forEach(function(e){io.observe(e)});
+  })();
+  document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

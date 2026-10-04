@@ -56,3 +56,54 @@ form .btn{justify-self:start}
 .small{color:var(--slate);font-size:.9rem;margin-top:1.25rem}
 .site-footer{background:var(--deep);color:var(--mint);padding:1.5rem 0;font-size:.875rem}
 .foot{display:flex;justify-content:space-between;gap:.5rem 1.5rem;flex-wrap:wrap}
+@media(min-width:48rem){.pillars.five{grid-template-columns:repeat(5,1fr)}}
+.about p+p{margin-top:1rem}
+.plain{margin:1rem 0;padding-left:1.25rem;color:var(--slate)}.plain li{margin-bottom:.5rem}
+.note{margin:2rem 0 0}
+code{background:rgba(11,42,68,.08);padding:.05rem .3rem;border-radius:.25rem;font-size:.9em}
+
+/* ---- visual enhancements ---- */
+.hero .wrap.split{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:60rem){.hero .wrap.split{grid-template-columns:1.1fr .9fr}}
+.hero{padding:5rem 0 6rem;overflow:hidden}
+.figure{margin:0}.figure svg{width:100%;height:auto;display:block}
+.figure figcaption{font-size:.75rem;color:var(--mint);opacity:.7;text-align:center;margin-top:.5rem}
+.ring{fill:none;stroke:rgba(168,237,230,.35);stroke-width:1.2}.ring.dash{stroke-dasharray:4 5}
+.core{fill:rgba(255,77,94,.18);stroke:#ff4d5e;stroke-width:1.5}
+.nd{fill:var(--mint)}.nd.sus{fill:#ff4d5e}.nd.add{fill:none;stroke:#ff4d5e;stroke-dasharray:3 3;stroke-width:1.5}
+.lk{stroke:rgba(0,200,195,.7);stroke-width:1.4;fill:none}.lk.cut{stroke:#ff4d5e;stroke-dasharray:5 4}
+.pulse{fill:none;stroke:#ff4d5e;stroke-width:1.5;transform-box:fill-box;transform-origin:center;animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{from{opacity:.9;transform:scale(1)}to{opacity:0;transform:scale(2.4)}}
+.svgtxt{font:600 10px Montserrat,sans-serif;fill:var(--mint)}
+
+.proof{background:var(--deep);color:#fff}
+.proof .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;padding-top:2rem;padding-bottom:2rem}
+@media(min-width:48rem){.proof .wrap{grid-template-columns:repeat(4,1fr)}}
+.proof b{display:block;font-size:1.7rem;line-height:1.2;color:var(--teal)}
+.proof span{font-size:.85rem;color:var(--mint)}
+
+.showcase{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:60rem){.showcase{grid-template-columns:.8fr 1.2fr}}
+.showcase p{color:var(--slate)}
+.showcase ul{padding-left:1.1rem;color:var(--slate)}.showcase li{margin-bottom:.4rem}
+.panel{background:linear-gradient(160deg,var(--deep),var(--navy));border-radius:.8rem;padding:1rem;box-shadow:0 20px 50px -20px rgba(5,29,48,.55);border:1px solid rgba(255,255,255,.08)}
+.panel svg{width:100%;height:auto;display:block}
+.panel .cap{color:var(--mint);opacity:.7;font-size:.72rem;text-align:center;margin:.5rem 0 0}
+.lane{stroke:rgba(255,255,255,.12);stroke-width:1}.lanetxt{font:600 10px Montserrat,sans-serif;fill:var(--mint)}
+.ev.a{fill:#00C8C3}.ev.b{fill:#f5a623}.ev.r{fill:#ff4d5e}
+.seq{stroke:rgba(255,255,255,.4);stroke-width:1.5;fill:none}.hand{stroke:#ff4d5e;stroke-width:1.5;stroke-dasharray:5 4;fill:none}
+.evtxt{font:500 9px Montserrat,sans-serif;fill:#fff}
+.bars{display:grid;gap:.9rem;padding:.5rem}
+.bar-row{display:grid;grid-template-columns:6.5rem 1fr 3rem;gap:.75rem;align-items:center;color:#fff;font-size:.8rem}
+.track{position:relative;height:.7rem;background:rgba(255,255,255,.1);border-radius:1rem}
+.track i{position:absolute;top:0;bottom:0;left:0;border-radius:1rem;background:linear-gradient(90deg,var(--teal),#ff4d5e)}
+.track u{position:absolute;top:50%;height:2px;background:#fff;transform:translateY(-50%);opacity:.85}
+.bar-row em{font-style:normal;font-weight:700;text-align:right}
+
+.card{transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px -14px rgba(11,42,68,.35)}
+.card h3::before{content:"";display:block;width:2.2rem;height:2.2rem;border-radius:.55rem;margin-bottom:.8rem;background:linear-gradient(135deg,var(--teal),var(--mint))}
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}.pulse{animation:none}.card{transition:none}}
+
+@media(max-width:40rem){nav a:not(.cta){display:none}.site-header{position:static}}
