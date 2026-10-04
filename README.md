@@ -1,5 +1,6 @@
-# Ruse Analytics – placeholder site
+# Ruse Analytics website
 
-Static "coming soon" page. No build step: serve this folder as-is
-(e.g. `npx serve ruse-analytics`) or point any static host at it.
-Update the contact email in `index.html` before launch.
+Static corporate site (HTML + CSS, no build step). Serve the repo root with any static host,
+or preview locally with `npx serve .`.
+
+Content (services, copy, contact email `hello@ruseanalytics.com`) is placeholder and should be reviewed before launch.
